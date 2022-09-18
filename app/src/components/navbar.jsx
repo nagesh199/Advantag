@@ -3,6 +3,7 @@ import styles from "./main.module.css"
 import { InputGroup,Form } from 'react-bootstrap'
 import { Dashboard } from "./dashboard";
 import { OrderDetails } from "./order_details";
+import { Graph } from "./grap";
 export const Navbar=()=>{
     return <div>
            <nav className={styles.nav_main}>
@@ -33,6 +34,7 @@ export const Navbar=()=>{
                         <spam className={styles.new_vine}>Add New Vine</spam>
                     </div>
                     <OrderDetails/>
+                    <Graph/>
                </div>
            </div>
            

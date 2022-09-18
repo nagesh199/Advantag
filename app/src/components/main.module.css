@@ -98,3 +98,29 @@
     width:30px;
     height: 30px;
 }
+.main_overview {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.sales_overiew {
+    display: flex;
+    justify-content: space-between;
+}
+.total_sales {
+    font-size: 15px;
+    font-weight: 600;
+}
+.total_sales p{
+    color:#797a7c;
+}
+.total_sales1>span:nth-child(1) {
+    color:#797a7c;
+    font-size: 15px;
+    font-weight: 600;
+}
+.total_sales1>span:nth-child(2) {
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+}
