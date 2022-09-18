@@ -47,18 +47,26 @@ export const Graph= ()=>{
                         <span>This Week</span>
                     </div>
                 </div>
-                <div>
+                <div className={styles.data_week}>
                     <div>
                         <h3>$74,729.00</h3>
-                        <span><img src=""/>+21% form last week</span>
+                        <span style={{color:"#4cf34f"}}><img width="20px" src="https://store-images.s-microsoft.com/image/apps.26602.13977111684761394.0bfe3d3f-121c-48a5-90a1-fd5f3f8a6484.b1cdaa65-f278-4f9c-b6fa-fc7fda795165"/>
+                        +21% form last week</span>
                     </div>
                     <div>
-                        <span>Highest revenue since 2 weeks ago</span>
+                        <span><img width="20px" src="https://store-images.s-microsoft.com/image/apps.26602.13977111684761394.0bfe3d3f-121c-48a5-90a1-fd5f3f8a6484.b1cdaa65-f278-4f9c-b6fa-fc7fda795165"/> Highest revenue since 2 weeks ago</span>
                     </div>
                 </div>
                
-                <div style={{marginTop:"30px", width:"75%"}}>
+                <div className={styles.chart_data}>
                     <CanvasJSChart options = {options}/>
+                    <div>
+                        <p>Total Profite</p>
+                        <h3>$12,545.00</h3>
+                        <h5>23% from last week</h5>
+
+                        <label>Total Product Sold<h4 style={{color:"black",fontSize:"17px"}}>329</h4></label>
+                    </div>
                 </div>
                 
     </div>

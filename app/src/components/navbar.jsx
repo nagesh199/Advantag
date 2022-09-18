@@ -4,6 +4,7 @@ import { InputGroup,Form } from 'react-bootstrap'
 import { Dashboard } from "./dashboard";
 import { OrderDetails } from "./order_details";
 import { Graph } from "./grap";
+import { Tabledata } from "./table";
 export const Navbar=()=>{
     return <div>
            <nav className={styles.nav_main}>
@@ -37,6 +38,6 @@ export const Navbar=()=>{
                     <Graph/>
                </div>
            </div>
-           
+           <Tabledata/>
     </div>
 }

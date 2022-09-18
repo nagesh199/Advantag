@@ -105,6 +105,7 @@
 .sales_overiew {
     display: flex;
     justify-content: space-between;
+    text-align: left;
 }
 .total_sales {
     font-size: 15px;
@@ -123,4 +124,30 @@
     font-size: 15px;
     font-weight: 600;
     margin-right: 10px;
+}
+.data_week {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.data_week>div:nth-child(2) {
+    font-weight: 600;
+    margin-right: 10px;
+}
+.chart_data {
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+}
+.chart_data>div {
+    text-align: left;
+    width:30%;
+    color:#797a7c;
+}
+.chart_data>div>h3 {
+    color:#811434
+}
+.chart_data>div>h5 {
+    color:#39d83c;
+    margin-bottom: 10px;
 }
