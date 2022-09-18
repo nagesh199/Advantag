@@ -1,37 +1,42 @@
 import React from "react";
-import data1 from "./db";
-import {Table } from 'react-bootstrap'
+import data from "./db";
+import {Table } from 'react-bootstrap';
+import styles from "./main.module.css"
 export const Tabledata =()=>{
-    console.log(data1,"data")
-    return <div>
+    return <div style={{width:"80%",marginLeft:"20%",marginTop:"30px"}}>
           
-          <Table striped bordered hover size="sm">
-            <thead>
+          <Table striped bordered hover size="sm" style={{fontSize:"13px"}}>
+            <thead >
                 <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                    <input  type="checkbox"/>
+                    <th>PRODUCT</th>
+                    <th>RATING</th>
+                    <th>VINTAGE</th>
+                    <th>QTY</th>
+                    <th>VOLUME</th>
+                    <th>COST</th>
+                    <th>PRICE</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                </tr>
-                <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                </tr>
-                <tr>
-                <td>3</td>
-                <td colSpan={2}>Larry the Bird</td>
-                <td>@twitter</td>
-                </tr>
+                {data.map((el)=>{
+                    return  <tr>
+                        <input type="checkbox"/>
+                        <td className={styles.product}>
+                                <img src={el.img}/>
+                            
+                                <label style={{marginLetf:"10px"}}>{el.name}<p>{el.name1}</p></label>
+                        </td>
+                        <td>{el.Rating}</td>
+                        <td>{el.VINTAGE}</td>
+                        <td>{el.QTY}</td>
+                        <td>{el.VOLUME}</td>
+                        <td>{el.COST}</td>
+                        <td>{el.PRICE}</td>
+                    </tr>
+                })}
+               
+                
             </tbody>
         </Table>
     </div>

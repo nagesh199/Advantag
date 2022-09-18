@@ -151,3 +151,14 @@
     color:#39d83c;
     margin-bottom: 10px;
 }
+.product {
+    height: 20px;
+}
+.product>img {
+   width:20px;
+   height:30px;
+}
+.product>span {
+  margin-left: 10px;
+  text-align: left;
+}
