@@ -18,7 +18,7 @@
     display: flex;
     gap:20px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
 }
 .right_nav>img{
@@ -39,6 +39,9 @@
     font-size: 16px;
     gap:10px;
     cursor: pointer;
+}
+.dash_main{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 .dash>img {
     margin-top: 3px;
@@ -106,6 +109,8 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 10px;
 }
 .total_sales {
     font-size: 15px;
@@ -129,6 +134,9 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 10px;
+    margin-top: 5px;
 }
 .data_week>div:nth-child(2) {
     font-weight: 600;
@@ -143,6 +151,8 @@
     text-align: left;
     width:30%;
     color:#797a7c;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 10px;
 }
 .chart_data>div>h3 {
     color:#811434
@@ -161,4 +171,17 @@
 .product>span {
   margin-left: 10px;
   text-align: left;
+}
+input[type=checkbox] {
+    accent-color: #f60d25;
+    cursor: pointer;
+  }
+.table_main{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 10px;
+}
+.table_main>h5{
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
 }

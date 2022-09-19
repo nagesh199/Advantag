@@ -70,7 +70,7 @@ export const Dashboard=()=>{
       };
     
     
-    return <div>
+    return <div className={styles.dash_main}>
      
            <div className={styles.dash} style={{
              backgroundColor: isActive ? 'peach' : '',

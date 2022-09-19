@@ -3,9 +3,13 @@ import data from "./db";
 import {Table } from 'react-bootstrap';
 import styles from "./main.module.css"
 export const Tabledata =()=>{
-    return <div style={{width:"80%",marginLeft:"20%",marginTop:"30px"}}>
-          
-          <Table striped bordered hover size="sm" style={{fontSize:"13px"}}>
+
+    const handleClick = ()=>{
+        
+    }
+    return <div className={styles.table_main} style={{width:"80%",marginLeft:"20%",marginTop:"30px"}}>
+           <h5>Inventory</h5>
+          <Table striped bordered hover size="sm" style={{fontSize:"13px" , marginRight:"15px"}}>
             <thead >
                 <tr>
                     <input  type="checkbox"/>
@@ -33,6 +37,7 @@ export const Tabledata =()=>{
                         <td>{el.VOLUME}</td>
                         <td>{el.COST}</td>
                         <td>{el.PRICE}</td>
+                        <img onClick={handleClick} heigth="10px" width="20px"src="https://freepngimg.com/thumb/web_design/24747-5-down-arrow-transparent-picture.png"/>
                     </tr>
                 })}
                

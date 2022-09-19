@@ -11,7 +11,7 @@ export const Navbar=()=>{
                 <div className={styles.search_bar}>
                     <img style={{color:"white"}} src="https://uploads-ssl.webflow.com/602bea2332bd8ff6426b5af8/602c03275eeaa26140a7f159_Footer%20Logo.svg"/>
                     <InputGroup className="mb-3" className={styles.input_form}>
-                            <InputGroup.Text id="inputGroup-sizing-default">
+                            <InputGroup.Text id="inputGroup-sizing-sm">
                             <img width="20px" src="https://img.icons8.com/ios/2x/search--v1.png"/>
                             </InputGroup.Text>
                             <Form.Control
